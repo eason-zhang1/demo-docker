@@ -22,6 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
 	</properties>
 
 	<repositories>
@@ -77,6 +78,11 @@
 				<version>0.4.3</version>
 				<configuration>
 					<imageName>demo-boot</imageName>
+					<imageTags>
+						<imageTag>${maven.build.timestamp}</imageTag>
+					</imageTags>
+					<forceTags>true</forceTags>
+					<noCache>true</noCache>
 					<dockerDirectory>src/main/docker</dockerDirectory>
 					<resources>
 						<resource>
