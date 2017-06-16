@@ -77,18 +77,12 @@
 				<version>0.4.3</version>
 				<configuration>
 					<imageName>demo-boot</imageName>
-					<imageTags>
-						<imageTag>latest</imageTag>
-						<imageTag>${maven.build.timestamp}</imageTag>
-					</imageTags>
-					<forceTags>true</forceTags>
-					<noCache>true</noCache>
-					<dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
+					<dockerDirectory>src/main/docker</dockerDirectory>
 					<resources>
 						<resource>
 							<targetPath>/</targetPath>
 							<directory>${project.build.directory}</directory>
-							<include>demo-boot_test.jar</include>
+							<include>${project.build.finalName}.jar</include>
 						</resource>
 					</resources>
 				</configuration>
