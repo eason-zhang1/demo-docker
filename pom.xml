@@ -66,11 +66,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
+				<!--<configuration>
 					<finalName>demo-boot_test</finalName>
 					<executable>true</executable>
 					<mainClass>com.springboot.DemoBootApplication</mainClass>
-				</configuration>
+				</configuration>-->
 			</plugin>
 
 			<plugin>
