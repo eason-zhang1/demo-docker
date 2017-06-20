@@ -20,7 +20,7 @@ public class DemoBootApplication {
 	@GetMapping(value = {"/"})
 	public ResponseEntity<?> index(){
 	  Map<String, String> result = new HashMap<>();
-	  result.put("result", "success");
+	  result.put("result", "哈哈哈哈哈");
 
 	  return ResponseEntity.ok(result);
 	}
